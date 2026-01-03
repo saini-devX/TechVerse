@@ -9,8 +9,12 @@ const Navbar = () => {
   const handleContactClick = (e) => {
     e.preventDefault();
     setOpen(false);
-    const footer = document.getElementById("footer");
-    footer?.scrollIntoView({ behavior: "smooth" });
+
+    // Scroll to footer on current page
+    setTimeout(() => {
+      const footer = document.getElementById("footer");
+      footer?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
   };
 
   useEffect(() => {
@@ -42,7 +46,7 @@ const Navbar = () => {
     >
       <nav className="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
 
-        {/* Logo — stays LEFT */}
+        {/* Logo — LEFT */}
         <Link
           to="/"
           className="text-2xl font-bold tracking-wide bg-gradient-to-r from-indigo-500 to-purple-600 text-transparent bg-clip-text"
@@ -50,7 +54,7 @@ const Navbar = () => {
           TechVerse
         </Link>
 
-        {/* All buttons — stay RIGHT */}
+        {/* Buttons — RIGHT */}
         <div className="hidden md:flex items-center gap-10 text-[15px]">
           <Link to="/" className={navItem("/")}>
             Home
