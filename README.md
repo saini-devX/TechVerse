@@ -9,7 +9,7 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 
 ## Live Demo
-🔗 https://techverse-shop.vercel.app/
+🔗 https://techverse-shop.vercel.app
 
 ## Overview
 TechVerse is a modern MERN-stack eCommerce platform featuring intuitive product browsing, cart management, and Stripe-powered checkout. It is built with a scalable backend, clean REST APIs, and a responsive UI for a smooth online-shopping experience.
