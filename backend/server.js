@@ -51,10 +51,13 @@ dotenv.config();
 
 app.use(express.json());
 
-app.use(cors({
-  origin: "https://techverse-shop.vercel.app",
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: "https://techverse-shop.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 app.use("/api/payment", paymentRoute);
 app.use("/api/products", productRoutes);
